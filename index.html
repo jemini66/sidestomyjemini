@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="ltswrk.css" rel="stylesheet" type="text/css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Overpass:ital,wght@0,100;0,200;0,400;0,500;0,700;1,100;1,200;1,300;1,700&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<script src="ltswrk.js"></script>
+
+	<!--HIDDEN NAV + RESPONSIVE NAV-->
+	<center>
+		<nav class="topnav" id="myTopnav">
+			<a href="hm.html" class="active">Home</a>
+			<a href="ltswrk.html">Let's Work</a>
+			<a href="mywrld.html">My World</a>
+			<a id="thts" href="#thoughts" onclick="yourMind()">More</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+		</nav>
+	</center>
+	<!---->
+
+    <p id="ans"></p>
+
+    <div id="titlediv">
+      <div id="title">
+        <header>
+          Lets Work!    
+        </header>
+      </div>
+    </div>
+
+<br>
+<br>
+
+ <main>
+
+<!-- INTRO DIV/GRID -->
+  <div class="introgrid">
+    <div class="mecontainer">
+      <img id="me"  src="https://i.ibb.co/VJWY98N/popup-finals-21.jpg" alt="black woman with  short hair posing on couch with purple skirt"  width="300px" height="400px">
+      <div class="metopcen">
+        <p>
+          Welcome to my digital office :) Take a look around, grab a resume, or even contact me directly!
+        </p>
+      </div>
+    </div>
+
+  <!-- <br>
+  <br> -->
+
+      <div id="objdiv">
+        <article >
+          <header class="header"> 
+            Objective  
+          </header>      
+          <div>
+            <p>
+              Here you will have the chance to see what I can bring to the table, professionally. Having so much expereince, a range of
+              academic exposure, and more, I am able to find the intersectionality of being a performing artist, organizer, artist manager, and overall creative. 
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+<!--      -->
+      
+
+<!-- Here, user can retrieve my resumes upon request -->
+    
+    <div  class="header">
+      <header>
+        Resumes
+      </header>
+    </div>
+
+    <div id="resbox">
+
+      
+    <div id="pares" class="resdiv">
+      <article> 
+        <header class="subheader">
+        Performing Artist/Choreographer 
+        </header>
+        <ul>
+          If any of these apply, click to request a resume or email me if you're not sure.
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <form class="resreq" action="/action_page.php">
+          <input type="file" id="myFile" name="filename">
+          <input type="submit">
+        </form>
+      </article>
+    </div>
+      
+    <div id="orgres" class="resdiv">
+      <article>
+        <header  class="subheader">
+          Organizer/Creative Director <br>
+          Artist Developer/Software Developer
+        </header>
+        <ul>
+          If any of these apply, click to request a resume or email me if you're not sure.
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <form class="resreq" action="/action_page.php">
+          <input type="file" id="myFile" name="filename">
+          <input type="submit">
+        </form>
+      </article>
+    </div>
+
+      <div id="compres" class="resdiv">
+        <article>
+          <header class="subheader">
+            SOMETHING	
+          </header>
+          <ul>
+            If any of these apply, click to request a resume or email me if you're not sure.
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <form class="resreq" action="/action_page.php">
+            <input type="file" id="myFile" name="filename">
+            <input type="submit">
+          </form>
+        </article>
+      </div>
+
+    <div id="contact" class="resdiv">
+        <article>
+        <header class="subheader">
+          CONTACT ME
+        </header>
+        <br>
+        <div class="container">
+          <form action="action_page.php">
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">First Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Last Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="country">Needs</label>
+              </div>
+              <div class="col-75">
+                <select id="country" name="country">
+                  <option value="australia">Organizer/Strategist</option>
+                  <option value="canada">Performing Artist</option>
+                  <option value="usa">Choreographer</option>
+                  <option value="usa">Creative Director</option>
+                  <option value="usa">Software Developer</option>
+                  <option value="usa">Artist Management/Development</option>
+                  <option value="usa">Multiple/TBD</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Subject</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+          </div>
+        </p>
+        <form class="resreq" action="/action_page.php">
+  <input type="file" id="myFile" name="filename">
+  <input type="submit">
+      </article>
+    </div>
+<!--      -->
+    </div>
+
+	</main>
+</body>
+
+</html>

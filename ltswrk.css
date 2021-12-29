@@ -1,0 +1,216 @@
+body {
+  background-color: #2c7a41;
+  font-family: 'Abril Fatface', monospace, cursive;
+  font-family: 'Overpass', monospace, sans-serif;
+  font-family: 'Staatliches', monospace, cursive;
+  padding: 0% 5%;
+}
+a:link{
+  color: #7e8047;
+}
+a:visited{
+  color: #eb920e;
+}
+a:hover{
+  color: #5ba896; font-weight: bold;
+}
+a:active{
+  color: #ffffff;
+}
+
+.introgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+#title {  
+  display: inline;
+  font-size: 10vw;
+  color: #538a50;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 3px 3px 3px #d2bee8;
+  text-underline-position: under;
+}
+#titlediv{
+  border: 5px;
+  padding: 1em;
+  width: 50vw;
+  margin: 1vw;
+  border-radius: 25px;
+  background-color: #d6a160;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#obj {
+  font-size: 30px;
+  text-decoration-color:olive;
+}
+#objdiv {
+  padding: 5%;
+  border-radius: 25px;
+  background-color: #d6a160;
+  box-shadow: 0 4px 8px 0 rgba(14, 5, 5, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* @media only screen and (max-width: 600px)  {
+  #introgrid{
+  grid-template-columns: 1fr;
+}
+}
+@media only screen and (max-width: 1000px) and (min-width: 601px)  {
+  #introgrid{
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+}
+@media only screen and (min-width: 1001px){
+  #introgrid{
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  }
+} */
+
+/* STYLING FOR HIDDEN NAV + RESPONSIVE NAV */
+.topnav {
+  background-color: none;
+  overflow: hidden;
+}
+.topnav a {
+  display: block;
+  color: #c4d1bc;
+  text-align: center;
+  padding: 13px 15px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.topnav .icon {
+  display: none;
+}
+.topnav a:hover {
+  background-color: #555;
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+}
+.topnav a.icon {
+  float: right;
+  display: block;
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;
+}
+}
+.topnav.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+.topnav.responsive  {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+ /* RESUMES */
+#resbox{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100.%;
+  padding: 5%;
+  border-radius: 25px;
+  background-color: #d1bbfc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 600px)  {
+  #resbox{
+  grid-template-columns: 1fr;
+}
+}
+@media only screen and (max-width: 1000px) and (min-width: 601px)  {
+  #resbox{
+  grid-template-columns: 1fr 1fr;
+}
+}
+@media only screen and (min-width: 1001px){
+  #resbox{
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+
+
+}
+
+.resdiv{
+  border: 5px;
+  align-content: right;
+  padding: 5%;
+  margin: 1vw; 
+  border-radius: 25px;
+  background: #afd6ab;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*  */
+
+#me {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2.5%;
+}
+
+.mecontainer {
+  display: inline-block;
+  border: 5px;
+  align-content: center;
+  padding: 2.5%;
+  margin: 1vw; 
+  position: relative;
+  border-radius: 25px;
+  background-color: #afd6ab;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.metopcen {
+  position: absolute;
+  width: 10.98em;
+  height: 8em;
+  top: 28%;
+  left: 49.8%;
+  transform: translate(-50%, -50%);
+  font-size: .72em;
+  font-weight: 500;
+}
+
+.header{
+  font-size: 2.5vw;
+  border: 5px;
+  padding: 0.68em;
+  width: 11vw;
+  margin: 1vw;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-position: under;
+  border-radius: 25px;
+  background-color: #d1bbfc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}  
+.subheader{
+  padding: 4%;  
+  text-decoration: underline;
+  text-underline-position: under;
+  border-radius: 25px;
+  background-color: #d1bbfc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
